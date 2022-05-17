@@ -1,0 +1,10 @@
+<div class="container" *ngIf="news$ | async as news">
+    <mat-card class="card" *ngFor="let article of news">
+        <a [routerLink]="['/news/', article.id]">
+        <mat-card-title>{{ article.name }}</mat-card-title>
+        <mat-card-content>
+            {{ article.description }}
+        </mat-card-content>
+        </a>
+    </mat-card>
+</div>
