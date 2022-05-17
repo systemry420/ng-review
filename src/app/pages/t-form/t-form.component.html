@@ -1,14 +1,15 @@
 <form>
+    {{ person | json }}
     <mat-form-field appearance="fill">
         <mat-label>Name</mat-label>
-        <input placeholder="Name" [(ngModel)]="person.name" matInput>
+        <input name="name" placeholder="Name" [(ngModel)]="person.name" matInput>
     </mat-form-field>
     <mat-form-field appearance="fill">
         <mat-label>Phone</mat-label>
-        <input placeholder="Phone" [(ngModel)]="person.phone" matInput>
+        <input name="phone" placeholder="Phone" [(ngModel)]="person.phone" matInput>
     </mat-form-field>
     
     <mat-form-field>
-        <button color="primary" mat-button>Click</button>
+        <button (click)="submit()" type="submit" color="primary" mat-button>Click</button>
     </mat-form-field>
 </form>

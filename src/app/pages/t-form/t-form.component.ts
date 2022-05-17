@@ -8,11 +8,17 @@ import { Person } from 'src/app/models/Person.model';
 })
 export class TFormComponent implements OnInit {
 
-  person = new Person(1, 'abc', '1234')
+  person = new Person(1, '', '')
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submit() {
+    
+    console.log(this.person);
+    
   }
 
 }
