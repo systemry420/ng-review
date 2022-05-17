@@ -1,0 +1,10 @@
+<form action="">
+    <input [formControl]="nameField" type="text" placeholder="Name">
+    <input [formControl]="phoneField" type="text" placeholder="Phone">
+    <input (click)="submit()" type="button" value="Click">
+    <ul>
+        <li *ngFor="let item of list">
+            {{ item | json }}
+        </li>
+    </ul>
+</form>

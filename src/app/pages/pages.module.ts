@@ -5,6 +5,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { SingleComponent } from './single/single.component';
 import { SharedModule } from '../shared/shared.module';
 import { TFormComponent } from './t-form/t-form.component';
+import { RFormComponent } from './r-form/r-form.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'tform',
     component: TFormComponent
+  },
+  {
+    path: 'rform',
+    component: RFormComponent
   }
 ]
 
@@ -27,7 +32,8 @@ const routes: Routes = [
   declarations: [
     MoviesComponent,
     SingleComponent,
-    TFormComponent
+    TFormComponent,
+    RFormComponent
   ],
   imports: [
     CommonModule,
